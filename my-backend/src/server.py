@@ -9,5 +9,9 @@ def hello():
 def ping():
     return "{status: ping}"
 
+@server.route("/pong")
+def pong():
+    return "{status: pong}"
+
 if __name__ == "__main__":
    server.run(host="0.0.0.0", port=5000)
